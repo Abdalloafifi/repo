@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -18,8 +19,8 @@ const Home = () => {
                                     <span className="text-gradient d-inline">Get online and grow fast</span>
                                 </h1>
                                 <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                    <Link className="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" to="/resume">Resume</Link>
+                                    <Link className="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" to="/projects">Projects</Link>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +28,7 @@ const Home = () => {
                             {/* صورة الملف الشخصي */}
                             <div className="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div className="profile bg-gradient-primary-to-secondary">
-                                    <img className="profile-img" src="imge/profile.png" alt="Profile" />
+                                    <img className="profile-img" src="imge/WhatsApp Image 2025-04-03 at 22.56.23_872c822d.png" alt="Profile" />
                                     <div className="dots-1">
                                         <svg
                                             version="1.1"
@@ -75,9 +76,22 @@ const Home = () => {
                                 <p className="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
                                 <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
                                 <div className="d-flex justify-content-center fs-2 gap-4">
-                                    <a className="text-gradient" href="#!"><i className="bi bi-twitter"></i></a>
-                                    <a className="text-gradient" href="#!"><i className="bi bi-linkedin"></i></a>
-                                    <a className="text-gradient" href="#!"><i className="bi bi-github"></i></a>
+                                    <a
+                                        className="text-gradient"
+                                        href="https://wa.me/201211810733"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="bi bi-whatsapp"></i>
+                                    </a>
+                                    <a
+                                        className="text-gradient"
+                                        href="https://github.com/Abdalloafifi"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="bi bi-github"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>

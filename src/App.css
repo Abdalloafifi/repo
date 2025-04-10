@@ -11577,69 +11577,60 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
+
 .profile {
   position: relative;
-  height: 80vw; /* زيادة الحجم */
-  width: 80vw; /* زيادة الحجم */
+  height: 75vw;
+  width: 75vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-height: 40rem; /* زيادة الحجم */
-  max-width: 40rem; /* زيادة الحجم */
+  max-height: 40rem;
+  max-width: 40rem;
 }
-
 .profile .profile-img {
-  height: 1000vw; /* يمكنك تعديل هذا إذا كان يبدو كبيرًا جدًا */
-  max-height: 120rem; /* زيادة الحجم */
+  height: 80vw;
+  max-height: 45rem;
   position: absolute;
-  bottom: 0;
-  left: 45%;
+  bottom: 10px;
+  left: 50%;
   transform: translateX(-50%);
 }
-
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
   right: 1.5vw;
   top: 4vw;
 }
-
 .profile .dots-1 svg {
   fill: #fff;
 }
-
 .profile .dots-2 {
   position: absolute;
   width: 3vw;
   right: -4vw;
   top: 6.05vw;
 }
-
 .profile .dots-2 svg {
   fill: #1e30f3;
 }
-
 .profile .dots-3 {
   position: absolute;
   width: 3vw;
   left: 1.5vw;
   bottom: 6.05vw;
 }
-
 .profile .dots-3 svg {
   fill: #fff;
 }
-
 .profile .dots-4 {
   position: absolute;
   width: 3vw;
   left: -4vw;
   bottom: 4vw;
 }
-
 .profile .dots-4 svg {
   fill: #1e30f3;
 }
-
 
 @media (min-width: 576px) {
   .profile {
@@ -11648,6 +11639,8 @@ html {
   }
   .profile .profile-img {
     height: 65vw;
+    width: 50vw;
+
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11673,6 +11666,8 @@ html {
   }
   .profile .profile-img {
     height: 55vw;
+    width: 45vw;
+
   }
   .profile .dots-1 {
     width: 3vw;
@@ -11698,6 +11693,8 @@ html {
   }
   .profile .profile-img {
     height: 45vw;
+    width: 35vw;
+
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11723,6 +11720,7 @@ html {
   }
   .profile .profile-img {
     height: 40vw;
+    width: 30vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11739,5 +11737,60 @@ html {
   .profile .dots-4 {
     width: 1.5vw;
     left: -2vw;
+  }
+}
+/* تحسينات عامة للتصميم */
+@media (max-width: 576px) {
+  .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .btn {
+      width: 100%; /* جعل الأزرار تأخذ عرض كامل */
+      margin-bottom: 1rem; /* إضافة مسافة بين الأزرار */
+  }
+
+  .profile-img {
+      width: 80%; /* تقليل حجم الصورة في الهواتف */
+      height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  }
+
+  .display-3 {
+      font-size: 2rem; /* تقليل حجم الخط في الهواتف */
+  }
+
+  .lead {
+      font-size: 1rem; /* تقليل حجم الخط في الهواتف */
+  }
+}
+
+/* تحسينات للأجهزة اللوحية */
+@media (min-width: 768px) {
+  .btn {
+      width: auto; /* إعادة عرض الأزرار إلى الوضع الافتراضي */
+  }
+
+  .profile-img {
+      width: 50%; /* زيادة حجم الصورة في الأجهزة اللوحية */
+  }
+
+  .display-3 {
+      font-size: 3rem; /* زيادة حجم الخط في الأجهزة اللوحية */
+  }
+}
+
+/* تحسينات للأجهزة الكبيرة */
+@media (min-width: 1200px) {
+  .display-3 {
+      font-size: 4rem; /* زيادة حجم الخط في الأجهزة الكبيرة */
+  }
+
+  .container {
+      max-width: 1140px; /* تحديد عرض أقصى للحاوية */
   }
 }
