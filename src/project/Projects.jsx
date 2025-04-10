@@ -6,26 +6,26 @@ const Projects = () => {
         {
             id: 1,
             name: "Real-Time Chat Application",
-            description: "Live messaging app with WebSocket communication and JWT authenticationIt is a chat site for quick credit. It is characterized by the ability to apply images, audio, video, or files. It is a meat project and is expandable. It has many features that have not been added to the interface, and thus work on making voice and image calls.",
-            tech: "MERN Stack, Socket.io, JWT",
-            link: "https://github.com/Abdalloafifi/chat-app" // موجود
+            description: "Built a real-time chat system using WebSocket with JWT authentication. Supports multiple media types: text, image, audio, video, and file uploads (simultaneously). Scalable architecture with upcoming features like video/voice calling.",
+            tech: "MERN Stack, Socket.io, JWT, WebSocket",
+            link: "https://github.com/Abdalloafifi/chat-app"
         },
         {
             id: 2,
             name: "Blog Platform (Plog-App)",
-            description: "Admin-controlled CMS with role-based access",
-            tech: "MERN Stack, RESTful APIs",
-            link: "https://github.com/Abdalloafifi/plogApp" // اتركه فارغًا
+            description: "Admin-controlled CMS with nested commenting system, post reactions, and real-time updates. Inspired by social platforms with dynamic post-type filtering and user-generated content types.",
+            tech: "MERN Stack, RESTful APIs, Nodemailer",
+            link: "https://github.com/Abdalloafifi/plogApp"
         },
         {
             id: 3,
             name: "Online Bookstore",
-            description: "E-commerce interface with dynamic filtering; So far, it is just a front end, and work is being done on its back end, with the addition of payment, verification, and security features for payment.",
-            tech: "React, Bootstrap",
-            link: "https://github.com/Abdalloafifi/Book-Store/tree/master" // موجود
+            description: "Responsive e-commerce interface with dynamic filtering. Backend under development includes payment integration (Visa/PayPal) and transactional notifications using Nodemailer.",
+            tech: "React, Bootstrap, AngularJS",
+            link: "https://github.com/Abdalloafifi/Book-Store/tree/master"
         }
     ];
-
+    
     return (
         <main>
             <section className="py-5">

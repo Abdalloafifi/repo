@@ -1,58 +1,65 @@
 const Resume = () => {
   const handleDownload = () => {
-    const resumeContent = `
-Abdullah Mohammed Afifi
-Email: abdo.afifi20007@gmail.com
-Phone: +201211810733
-GitHub: github.com/Abdalloafifi
-LinkedIn: linkedin.com/in/abdallah-afifi-05bb40271
-Portfolio: https://portfolio-ee95e.web.app/
-
-Summary:
-Aspiring MERN Stack Developer currently in the third year of a Computer Science degree.
-Passionate about building secure and user-centric web applications through self-taught projects.
-Seeking work opportunities to apply academic knowledge in real-world scenarios.
-
-Education:
-Bachelor’s in Computer Science (Expected Graduation: 2026)
-Institute of Computers and Information, Tanta | 2022–Present
-Key Courses: Web Development, Database Systems, Software Security.
-ITI Workshops: Explored AI tools and large-scale project management (RoboDesk case study).
-
-Technical Skills:
-Frontend: React, HTML5, CSS3, Bootstrap, Socket.io.
-Backend: Node.js, Express.js, MongoDB, RESTful APIs.
-Security: JWT, CSRF Protection, Rate Limiting, Helmet.
-Tools: Git, Postman.
-Languages: Arabic (Native), Russian (B2), English (A2).
-
-Projects:
-1. Real-Time Chat App
-   - Implemented WebSocket communication for instant messaging.
-   - Tech: MERN Stack, Socket.io, JWT.
-   link: "https://github.com/Abdalloafifi/chat-app" 
-2. Blog Platform (Plog-App)
-   - Developed admin-controlled content management system.
-   - Tech: MERN Stack, RESTful APIs.
-   link: "https://github.com/Abdalloafifi/plogApp"
-3. Online Bookstore
-   - Built a React-based e-commerce interface.
-   - Tech: React, Bootstrap.
-   link: "https://github.com/Abdalloafifi/Book-Store/tree/master"
-
-Training:
-Appout Training Program | 2024 (2 Months)
-- Focused on AngularJS fundamentals and API integration.
-- Gained insights into team collaboration and project workflows.
-        `;
-
-    const blob = new Blob([resumeContent], { type: "text/plain" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "CV-Abdullah_Afifi.txt";
-    a.click();
-    URL.revokeObjectURL(url);
+  const resumeContent = `
+  Abdullah Mohammed Afifi
+  Email: abdo.afifi20007@gmail.com
+  Phone: +201211810733
+  GitHub: github.com/Abdalloafifi
+  LinkedIn: linkedin.com/in/abdallah-afifi-05bb40271
+  Portfolio: https://portfolio-ee95e.web.app/
+  
+  Summary:
+  Mid-Level Full Stack Developer with experience in building scalable, secure applications. Trained in AngularJS fundamentals and committed to adopting advanced development practices. Seeking opportunities to deliver professional solutions.
+  
+  Education:
+  Bachelor’s in Computer Science (Expected Graduation: 2026)
+  Institute of Computers and Information, Tanta | 2022–Present
+  Key Courses: Web Development, Database Systems, Software Security.
+  ITI Workshops: Advanced project management and AI tools (RoboDesk case study).
+  
+  Technical Skills:
+  Frontend: React, HTML5, CSS3, Bootstrap, Socket.io, AngularJS
+  Backend: Node.js, Express.js, MongoDB, RESTful APIs
+  Security: JWT, CSRF Protection, Rate Limiting, Helmet
+  Tools: Git, Postman
+  Languages: Arabic (Native), Russian (B2), English (A2)
+  
+  Projects:
+  
+  Real-Time Chat App
+  
+  WebSocket communication with JWT authentication
+  
+  Multi-media support & scalable architecture
+  Tech: MERN Stack, Socket.io, JWT
+  
+  Blog Platform (Plog-App)
+  
+  Nested comments, reactions, and real-time updates
+  
+  Dynamic content filtering system
+  Tech: MERN Stack, RESTful APIs, Nodemailer
+  
+  Online Bookstore
+  
+  Payment integration & transactional emails
+  Tech: React, Bootstrap, AngularJS
+  
+  Training:
+  Appout Training Program | 2024 (2 Months)
+  
+  AngularJS fundamentals and API integration
+  
+  Team collaboration with version control
+  `;
+  
+  const blob = new Blob([resumeContent], { type: "text/plain" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "CV-Abdullah_Afifi.txt";
+  a.click();
+  URL.revokeObjectURL(url);
   };
 
   return (
