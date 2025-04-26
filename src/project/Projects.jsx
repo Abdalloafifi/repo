@@ -3,27 +3,38 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const projects = [
-        {
-            id: 1,
-            name: "Real-Time Chat Application",
-            description: "Built a real-time chat system using WebSocket with JWT authentication. Supports multiple media types: text, image, audio, video, and file uploads (simultaneously). Scalable architecture with upcoming features like video/voice calling.",
-            tech: "MERN Stack, Socket.io, JWT, WebSocket",
-            link: "https://github.com/Abdalloafifi/chat-app"
-        },
-        {
-            id: 2,
-            name: "Blog Platform (Plog-App)",
-            description: "Admin-controlled CMS with nested commenting system, post reactions, and real-time updates. Inspired by social platforms with dynamic post-type filtering and user-generated content types.",
-            tech: "MERN Stack, RESTful APIs, Nodemailer",
-            link: "https://github.com/Abdalloafifi/plogApp"
-        },
-        {
-            id: 3,
-            name: "Online Bookstore",
-            description: "Responsive e-commerce interface with dynamic filtering. Backend under development includes payment integration (Visa/PayPal) and transactional notifications using Nodemailer.",
-            tech: "React, Bootstrap, AngularJS",
-            link: "https://github.com/Abdalloafifi/Book-Store/tree/master"
-        }
+      {
+        id: 1,
+        name: "Real-Time Chat Application",
+        description:
+          "A comprehensive real-time chat platform enabling users to exchange messages with multimedia support (images, files, videos). Features include friendship management (sending/receiving requests), individual & group chats with online status, profile updates with privacy settings, secure login using JWT, protection against CSRF and SQL Injection, and real-time communication via Socket.io.",
+        tech: "MERN Stack, Socket.io, JWT, Cookies, CSRF Protection, CORS, SQL Injection Prevention",
+        link: "https://github.com/Abdalloafifi/chat-app/tree/master",
+      },
+      {
+        id: 2,
+        name: "Blog Platform (Plog-App)",
+        description:
+          "A social media platform allowing content publishing and interaction through a nested comments system. Users can create, edit, or delete posts; engage via likes; and recover passwords through an integrated email-based system. Includes admin-controlled content filtering and real-time updates.",
+        tech: "MERN Stack, RESTful APIs, Firebase, Nodemailer, CSRF Protection",
+        link: "https://github.com/Abdalloafifi/plogApp",
+      },
+      {
+        id: 3,
+        name: "Online Bookstore (In Development)",
+        description:
+          "A fully integrated e-commerce platform with role-based authentication (admin/user), shopping cart, and electronic payment system. Built with React.js, React Router, and state management via Context API/Redux.",
+        tech: "React, Bootstrap, Redux, Axios, RESTful APIs",
+        link: "https://github.com/Abdalloafifi/Book-Store/tree/master",
+      },
+      {
+        id: 4,
+        name: "A platform for requesting medical services",
+        description:
+          "A system responsible for creating medical services, dealing with electronic and manual payments, complete encryption of your data, dealing with the latest types of token encryption, dealing with verification of the phone number and e-mail, dealing with written transactions between patients and doctors in the scope of medical support and medical consultation, and complete control of the system through the admin in Aleppo data, approval and clarification to users and more things.",
+        tech: "axios, bcrypt, cors, dotenv, express, jsonwebtoken, mongoose, nodemailer, csurf, cloudinary, compression, helmet, hpp, joi, joi-password-complexity, multer, socket.io, twilio, ",
+        link: "https://github.com/Abdalloafifi/24h/tree/main/api",
+      },
     ];
     
     return (

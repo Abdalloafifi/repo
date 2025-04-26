@@ -5,6 +5,7 @@ import Home from './home/Home';
 import Resume from './resume/Resume';
 import Projects from './project/Projects';
 import NotFound from './NotFound'; // Create a NotFound component for 404 errors
+import ProjectGallery from './Project-Gallery/ProjectGallery';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/Project-Gallery" element={<ProjectGallery />} />
         <Route path="*" element={<NotFound />} /> {/* Handle 404 errors */}
       </Routes>
     </Router>
